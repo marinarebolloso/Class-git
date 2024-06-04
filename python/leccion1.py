@@ -43,4 +43,22 @@ print(int(numero1) + int(numero2))
 
 # Tipos booleanos (bool)
 
+miBooleano = 3 > 4
+print(miBooleano)
 
+if miBooleano:
+    print("El resultado es verdadero")
+else:
+    print("El resultado es falso")
+
+# Procesar entrada del usuario
+# Función input
+resultado = input("Ingrese un valor")
+print("El resultado es: ",resultado)
+
+# Conversión del dato de entrada
+numero1 = int(input("Escribe el primer número"))
+numero2 = int(input("Escribe el segundo número"))
+resultado = numero1 + numero2
+
+print("El resultado de la suma es: ",resultado)
