@@ -1,3 +1,4 @@
+'''
 miVariable = 3
 print(miVariable)
 miVariable = "Hello a todos los estudiantes de la tecnicatura"
@@ -62,3 +63,77 @@ numero2 = int(input("Escribe el segundo número"))
 resultado = numero1 + numero2
 
 print("El resultado de la suma es: ",resultado)
+'''
+'''
+#Operadores (clase 4)
+
+operandoA = 8
+operandoB = 5
+suma = operandoA + operandoB
+#print("El resultado de la suma es:",suma)
+print(f"El resultado de la suma es: {suma}")
+
+resta = operandoA - operandoB
+print(f"El resultado de la resta es: {resta}")
+
+multiplicacion = operandoA * operandoB
+print(f"El resultado de la multiplicación es: {multiplicacion}")
+
+division = operandoA / operandoB
+print(f"El resultado de la división es: {division}")
+division = operandoA // operandoB
+print(f"El resultado de la división (int) es: {division}")
+modulo = operandoA % operandoB
+print(f"El resultado de la división o modulo (residuo) es: {modulo}")
+exponente = operandoA ** operandoB
+print(f"El resultado del exponente es: {exponente}")
+'''
+#Calcular área y perímetro de un triángulo
+'''
+print("Calcula el área y perímetro de un triángulo")
+alto = int(input("Ingrese la atura del triángulo"))
+ancho = int(input("Ingrese su ancho"))
+
+area = (ancho * alto) / 2
+perimetro = (alto + ancho) * 2
+
+print("Área:", area)
+print("Perímetro:",perimetro)
+'''
+#operadores de reasignación
+miVariable3 = 10
+print(miVariable3)
+miVariable3 = miVariable3 + 1
+print(miVariable3)
+
+miVariable3 += 1
+print(miVariable3)
+
+miVariable3 -= 2
+print(miVariable3)
+miVariable3 *= 3
+print(miVariable3)
+miVariable3 /= 2
+print(miVariable3)
+
+#Operadores de comparación
+d = 4
+b = 2
+resultado = d==b #comparar si son iguales
+print(resultado)
+
+#operador diferente
+resultado = d != b
+print(resultado)
+#operador mayor que
+resultado = d > b
+print(resultado)
+#operador menor que
+resultado = d < b
+print(resultado)
+#operador menor o igual que
+resultado = d <= b
+print(resultado)
+#operador mayor o igual que
+resultado = d >= b
+print(resultado)
