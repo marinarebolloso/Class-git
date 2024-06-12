@@ -178,7 +178,7 @@ if not (vacaciones or diaDescanso):
     print("Puede asistir al juego")
 else:
     print("No puede asistir, tiene trabajo que hacer")"""
-
+"""
 #Ejercicio rango de edad 20-30
 
 edadUsuario = int(input("Ingrese su edad"))
@@ -189,3 +189,13 @@ if rangoEdad:
     print(f"Su edad {edadUsuario} se encuentra dentro del rango 20-30")
 else:
     print(f"Su edad {edadUsuario} está fuera del rango 20-30")
+"""
+#El mayor de dos números
+
+numero1 = int(input("Digite un número: "))
+numero2 = int(input("Digite otro número: "))
+
+if numero1 > numero2:
+    print(f"El numero {numero1} es mayor")
+else:
+    print(f"El número {numero2} es mayor")
