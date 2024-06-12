@@ -100,6 +100,7 @@ perimetro = (alto + ancho) * 2
 print("Área:", area)
 print("Perímetro:",perimetro)
 '''
+"""
 #operadores de reasignación
 miVariable3 = 10
 print(miVariable3)
@@ -137,3 +138,54 @@ print(resultado)
 #operador mayor o igual que
 resultado = d >= b
 print(resultado)
+"""
+"""
+# Operadores lógicos
+
+#and
+a = False
+b = True
+resultado = a and b
+print(resultado)
+
+#or
+resultado = a or b
+print(resultado)
+
+#not
+resultado = not a
+print(resultado)
+"""
+
+"""
+#Ejercicio: valor dentro de un rango
+
+valor = int(input("Digite un número:"))
+valorMinimo = 0
+valorMaximo = 5
+dentroRango = (valor >= valorMinimo and valor <= valorMaximo)
+if dentroRango:
+    print(f"El valor {valor} se encuentra dentro del rango")
+else:
+    print(f"El valor {valor} se encuentra fuera del rango")
+"""
+"""
+#Ejercicio operador or (saber si un padre puede asistir al juego del hijo), operador not
+
+vacaciones = True
+diaDescanso = False
+if not (vacaciones or diaDescanso):
+    print("Puede asistir al juego")
+else:
+    print("No puede asistir, tiene trabajo que hacer")"""
+
+#Ejercicio rango de edad 20-30
+
+edadUsuario = int(input("Ingrese su edad"))
+edadMinima = 20
+edadMaxima = 30
+rangoEdad = (edadUsuario >= edadMinima and edadUsuario <= edadMaxima)
+if rangoEdad:
+    print(f"Su edad {edadUsuario} se encuentra dentro del rango 20-30")
+else:
+    print(f"Su edad {edadUsuario} está fuera del rango 20-30")
