@@ -32,7 +32,7 @@ else if (horaDia >= 17 && horaDia <= 19){
 else if (horaDia >= 20 && horaDia <= 23){
     mensaje = "Good night"
 }
-else if (horaDia >= 00 && horaDia <= 5){
+else if (horaDia >= 0 && horaDia <= 5){
     mensaje = "Sweet dreams"
 }
 else{
@@ -78,3 +78,92 @@ const fechaNacimiento = 2006;
 console.log(fechaNacimiento);
 //fechaNacimiento = 2003;
 console.log(fechaNacimiento); //solo
+
+//Evitar repetir código
+
+let days = "Sábado";
+
+switch (days){
+    case "Lunes":
+        console.log("Hoy es: "+days);
+        break; 
+    case "Martes":
+        console.log("Hoy es: "+days);
+        break;
+    case "Miércoles":
+        console.log("Hoy es: "+days);
+        break;
+    case "Jueves":
+        console.log("Hoy es: "+days);
+        break;
+    case "Viernes":
+        console.log("Hoy es: "+days);
+        break;
+    case "Sábado":
+        console.log("Hoy es: "+days);
+        break;
+}
+
+//Versión mejorada con arreglo
+
+let days2 = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+function getDay(n){
+    if (n < 1 || n > 7){
+        throw new Error("Out of range");
+    }
+    return days2[n-1]; 
+}
+console.log(getDay(2))
+
+//Meses del año
+let meses = "Enero";
+
+switch (meses){
+    case "Enero":
+        console.log("Estamos en: "+meses);
+        break; 
+    case "Febrero":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Marzo":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Abril":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Mayo":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Junio":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Julio":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Agosto":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Septiembre":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Octubre":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Noviembre":
+        console.log("Estamos en: "+meses);
+        break;
+    case "Diciembre":
+        console.log("Estamos en: "+meses);
+        break;
+}
+
+//Versión mejorada con arreglo
+
+let meses2 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+function getMonth(n){
+    if (n < 1 || n > 12){
+        throw new Error("Out of range");
+    }
+    return meses2[n-1]; 
+}
+console.log(getMonth(8))
